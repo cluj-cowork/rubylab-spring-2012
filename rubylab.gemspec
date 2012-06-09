@@ -4,9 +4,9 @@ require File.expand_path('../lib/rubylab/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Stas SUȘCOV"]
   gem.email         = ["stas@net.utcluj.ro"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{Rubylab, primul gem}
+  gem.summary       = %q{Primul nostru gem.}
+  gem.homepage      = "http://clujcowork.ro"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "rubylab"
   gem.require_paths = ["lib"]
   gem.version       = Rubylab::VERSION
+  
+  # Dependinte
+  gem.add_dependency('tinder')
 end
