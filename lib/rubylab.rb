@@ -10,7 +10,7 @@ require 'tinder'
     attr_reader :parola
   
     # Constructorul clasei noastre
-    def initialize
+    def start
         citeste_parola
         afiseaza_camerele
     end
