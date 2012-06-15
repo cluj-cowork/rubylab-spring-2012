@@ -17,15 +17,15 @@ require 'tinder'
     
     # Cere utilizatorului parola de la campfire
     def citeste_parola
-        puts 'Tasteaza parola, aka tokenul tau Campfire:'
-        @parola = gets.strip
+        Kernel.puts 'Tasteaza parola, aka tokenul tau Campfire:'
+        @parola = Kernel.gets.strip
     end
     
     # Cere utilizatorului un mesaj
     # @return [String], mesajul citit
     def citeste_mesajul
-        puts 'Scrie un mesaj:'
-        return gets.strip
+        Kernel.puts('Scrie un mesaj:')
+        return Kernel.gets.strip
     end
     
     # Interogheaza API-ul si listeaza camerele la care avem access
