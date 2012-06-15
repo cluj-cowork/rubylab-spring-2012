@@ -17,4 +17,8 @@ Gem::Specification.new do |gem|
   
   # Dependinte
   gem.add_dependency('tinder')
+  
+  # Dependinte pentru dezvoltare
+  gem.add_development_dependency('rspec')
+  gem.add_development_dependency('simplecov')
 end
